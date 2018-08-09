@@ -1,0 +1,15 @@
+.button_container{
+    width:100%;
+}
+
+.button{
+    width:50%;
+    height:1.5rem;
+    font-size:1rem;
+}
+.button_create{
+    background-color: aquamarine
+}
+.button_remove{
+    background-color: tomato
+}

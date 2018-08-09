@@ -1,10 +1,11 @@
 import React from 'react';
+import './Button.css';
 
 function Button ({create,remove}){
     return(
-        <div>
-            <button onClick={create}>Create</button>
-            <button onClick={remove}>Remove</button>
+        <div className="button_container">
+            <button onClick={create} className="button button_create">Create</button>
+            <button onClick={remove} className="button button_remove">Remove</button>
         </div>
     )
 }

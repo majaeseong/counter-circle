@@ -1,6 +1,7 @@
 import React from 'react';
 import Counter from './Counter';
 import Button from '../Button/Button';
+import './counterlist.css';
 
 function Presenter ({create,remove,counters,add,sub,change}){
     let counter_list = [];
@@ -22,7 +23,9 @@ function Presenter ({create,remove,counters,add,sub,change}){
     return(
         <div>
             <Button create={create} remove={remove}/>
-            {counter_list}
+            <div className="counter_list">
+                {counter_list}
+            </div>
         </div>
     )
 }
